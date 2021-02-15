@@ -11,6 +11,7 @@ class CategoriesScreen extends StatelessWidget {
         title: Text('Vamos Cozinhar!'),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(20),
         // GridView é semelhante a ListView, porem conseguindo organizar os elementos em grade
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           // Define que um Sliver (area com scroll) se extendera para o tamanho maximo do CrossAxis

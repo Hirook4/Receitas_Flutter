@@ -8,8 +8,11 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15),
-      child: Text(category.title),
+      padding: const EdgeInsets.all(15),
+      child: Text(
+        category.title,
+        style: Theme.of(context).textTheme.title, // Usando tema definido no main.dart linha 15
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         gradient: LinearGradient(
